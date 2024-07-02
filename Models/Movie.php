@@ -1,6 +1,6 @@
 <?php 
 class movie {
-    // variabili istanza 
+    // variabili d'istanza 
     public $titolo;
     public $titolo_originale;
     public $data_uscita;
@@ -15,5 +15,6 @@ class movie {
         $this->stelle = $_stelle;
         $this->nazione_di_produzione = $_nazione_di_produzione;
     }
+    // metodi 
 }
 ?>
