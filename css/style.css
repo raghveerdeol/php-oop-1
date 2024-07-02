@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.card{
+    text-align: center;
+    line-height: 2rem;
+    width: calc((100% / 3) - 1rem);
+}
+ul{
+    list-style: none;
+}
