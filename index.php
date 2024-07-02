@@ -21,7 +21,7 @@ var_dump($terminetor->getGenere() )
             <ul>
                 <li>Data uscita: <?php echo $terminetor->data_uscita;?></li>
                 <li>Stelle: <?php echo $terminetor->stelle;?></li>
-                <li>Nazione di produzione: <?php echo $terminetor->getGenere();?></li>
+                <li>Genere: <?php echo $terminetor->getGenere();?></li>
             </ul>
         </div>
         <div class="card">
@@ -29,7 +29,18 @@ var_dump($terminetor->getGenere() )
             <ul>
                 <li>Data uscita: <?php echo $avengers->data_uscita;?></li>
                 <li>Stelle: <?php echo $avengers->stelle;?></li>
-                <li>Nazione di produzione: <?php echo $avengers->getGenere();?></li>
+                <li>Genere: <?php echo $avengers->getGenere();?></li>
+            </ul>
+        </div>
+        <div class="card">
+            <ul>
+                <li><?php foreach ($avengers as $key => $value) {?>
+                    <div>
+                        <span><?php echo $key ?>: </span>
+                        <span> <?php  echo $value; ?></span>
+                    </div>
+                <?php } ?>
+            </li>
             </ul>
         </div>
     </main>
