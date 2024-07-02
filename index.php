@@ -1,11 +1,11 @@
 <?php 
 include_once __DIR__ . "/Models/Movie.php";
 
-$terminetor = new movie("Terminetor", "Terminetor", "01-01-2000", "4", "Usa");
-$avengers = new movie("Avengers","Avengers endgame", "20-04-2019","5","Usa");
+$terminetor = new movie("Terminetor", "Terminetor", "01-01-2000", "4", false);
+$avengers = new movie("Avengers","Avengers endgame", "20-04-2019","5","azione");
 // $terminetor->titolo="terminetor";
 // $terminetor->stelle=5;
-var_dump($terminetor, $avengers )
+var_dump($terminetor->getGenere() )
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@ var_dump($terminetor, $avengers )
             <ul>
                 <li>Data uscita: <?php echo $terminetor->data_uscita;?></li>
                 <li>Stelle: <?php echo $terminetor->stelle;?></li>
-                <li>Nazione di produzione: <?php echo $terminetor->nazione_di_produzione;?></li>
+                <li>Nazione di produzione: <?php echo $terminetor->getGenere();?></li>
             </ul>
         </div>
         <div class="card">
@@ -29,7 +29,7 @@ var_dump($terminetor, $avengers )
             <ul>
                 <li>Data uscita: <?php echo $avengers->data_uscita;?></li>
                 <li>Stelle: <?php echo $avengers->stelle;?></li>
-                <li>Nazione di produzione: <?php echo $avengers->nazione_di_produzione;?></li>
+                <li>Nazione di produzione: <?php echo $avengers->getGenere();?></li>
             </ul>
         </div>
     </main>
