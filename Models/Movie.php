@@ -18,7 +18,8 @@ class movie {
     // metodi 
     public function getGeneri(){
         if ($this->generi === false || $this->generi === "") {
-            return "generi non definito";
+            $errore = ["generi non definito"]; 
+            return $errore;
         } else {
             return $this->generi;
         }
